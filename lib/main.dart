@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:random_color/random_color.dart';
 
 
 void main() {
@@ -12,11 +11,7 @@ bool isFirst=true;
 
 class MyApp extends StatelessWidget {
 
-  /*RandomColor _randomColor = RandomColor();
 
-  void changeColor(){
-    setSta
-  }*/
   @override
   Widget build(BuildContext context) {
 
