@@ -28,18 +28,19 @@ class homepage extends StatefulWidget {
 }
 
 class _homepageState extends State<homepage> {
-  var _color=Colors.black87;
+  var _color=Colors.white;
 
 
   void changeColor(){
     setState(() {
     _color=Color((Random().nextDouble() * 0xFFFFFF).toInt() << 0)
-        .withOpacity(1.0); // this is generate random color, u can use your own..
+        .withOpacity(1.0);
     });
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor:_color,
       appBar: AppBar(
         title: Text('Welcome'),
       ),
@@ -51,8 +52,8 @@ class _homepageState extends State<homepage> {
             'Hello, World!',
 
             style: TextStyle(
-                fontSize:40,
-                color:_color
+                fontSize:40
+
             ),
           ),
         ),
